@@ -7,6 +7,7 @@ import Challange1 from "./Challange_1";
 import Challange2 from "./Challange_2";
 import Challange3, { para, challangeNumber } from "./Challange_3";
 import Challange4, { ChallangeNumber } from "./Challange_4";
+import Challange5, { CNumber } from "./Challange_5";
 
 // use of external css
 import "./index.css";
@@ -107,7 +108,7 @@ ReactDom.render(
 ReactDom.render(
   <>
     {para}
-    {challangeNumber}
+    <h1 className = 'heading_style commen_heading'>This is Challange Number : {challangeNumber}</h1>
     <Challange3 />
   </>,
   document.getElementById("root")
@@ -116,11 +117,20 @@ ReactDom.render(
 // Challange 4
 ReactDom.render(
   <>
-    <h1>This is Challange Number : {ChallangeNumber}</h1>
+    <h1 className = 'heading_style commen_heading'>This is Challange Number : {ChallangeNumber}</h1>
     <Challange4 />
   </>,
   document.getElementById("root")
 );
+
+// Challange 5
+ReactDom.render(
+  <>
+    <h1 className = 'heading_style commen_heading'>This is Challange number {CNumber}</h1>
+    <Challange5 />
+  </>,
+  document.getElementById('root')
+)
 
 //without use react
 // var h2 = document.createElement("h2");
