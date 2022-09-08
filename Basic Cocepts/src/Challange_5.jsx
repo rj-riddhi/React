@@ -8,7 +8,7 @@ const Challange_5 = () =>{
     const count = ()=>{
         IncCount(total + 1);
     }
-    const [time,updatedTime] = useState('00:00:00');
+    const [time,updatedTime] = useState(new Date().toLocaleTimeString('en-GB'));
     const currentTime = ()=>{
         let uTime = new Date().toLocaleTimeString('en-GB');
             updatedTime(uTime)

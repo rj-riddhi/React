@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Pacifico&family=Raleway:wght@100;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Pacifico&family=Raleway:wght@100;300;400;700&family=Roboto+Slab:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@800&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color:black;
+}
+
+.main_div{
+  margin-top:20%;
+}
+.heading_style{
+  text-align: center;
+  font-family: 'Stick No Bills', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color : #868686;
+  font-weight: 800;
+  margin-bottom : 15px;
+  font-size : 2rem;
+  font-size: 5rem;
+  letter-spacing: 10px;
+}
+.day{
+  color: #fff;
+  justify-content: right;
+  display: flex;
+  max-width:20%;
+  margin-left:40%;
+  margin-top:6%;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 2px;
+}
+.meridiem {
+  color: #fff;
+  justify-content: right;
+  display: flex;
+  margin-top:3.5%;
+  padding-left:0.4%;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 2px;
+}
+.card_info{
+  justify-content: center;
+  display: flex;
+  color: #fff;
+}
