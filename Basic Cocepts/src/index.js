@@ -9,6 +9,7 @@ import Challange3, { para, challangeNumber } from "./Challange_3";
 import Challange4, { ChallangeNumber } from "./Challange_4";
 import Challange5, { CNumber } from "./Challange_5";
 import Form from './Form';
+import Challange6, {cNumber} from "./Challange_6";
 
 // use of external css
 import "./index.css";
@@ -140,6 +141,16 @@ ReactDom.render(
   <h1 className = 'heading_style commen_heading'>Form Handling</h1>
   <Form />
 </>,document.getElementById('root'));
+
+// Challange 6
+ReactDom.render(
+  <>
+    <h1 className = 'heading_style commen_heading'>This is Challange number {cNumber}</h1>
+    <Challange6 />
+  </>,
+  document.getElementById('root')
+)
+
 //without use react
 // var h2 = document.createElement("h2");
 // h2.innerHTML = "Radhika";
