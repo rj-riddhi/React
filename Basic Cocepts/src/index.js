@@ -10,6 +10,7 @@ import Challange4, { ChallangeNumber } from "./Challange_4";
 import Challange5, { CNumber } from "./Challange_5";
 import Form from './Form';
 import Challange6, {cNumber} from "./Challange_6";
+import SpreadOperator from "./SpreadOperator";
 
 // use of external css
 import "./index.css";
@@ -41,7 +42,7 @@ ReactDom.render(
   document.getElementById("root")
 );
 
-// render multiple JSX elements third method usin REACTFRAGMENT
+// render multiple JSX elements third method usin REACTFRAGMENT (render multiple JSX elements third method)
 ReactDom.render(
   <React.Fragment>
     <h1>Hello</h1>
@@ -151,6 +152,12 @@ ReactDom.render(
   document.getElementById('root')
 )
 
+// Spread Operator
+ReactDom.render(
+  <>
+    <SpreadOperator />
+  </>,document.getElementById('root')
+)
 //without use react
 // var h2 = document.createElement("h2");
 // h2.innerHTML = "Radhika";
