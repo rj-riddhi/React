@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Pacifico&family=Raleway:wght@100;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Pacifico&family=Raleway:wght@100;300;400;700&family=Roboto+Slab:wght@300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+.main_div{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+}
+.center_div{
+    width: 17%;
+    height: 50vh;
+    background-color: #f4f4f4;
+    box-shadow: 5px 5px 25px -5px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+}
+.counter{
+    color: white;
+    background: transparent;
+    background-color: #97D2EC;
+    padding: 5px 0 5px 0;
+    margin-bottom: 10px;
+    margin-top : 90px;
+    box-shadow: 5px 5px 15px -5 rgba(0, 0, 0, 0.3);
+    font-size : 3rem;
+}
+.btns{
+    display: flex;
+    background-color: transparent;
+    justify-content: space-between;
+    padding: 20px;
+}
+button{
+    min-height: 40px;
+    width: auto;
+    border:none;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    margin-top: 40px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #97D2EC;
+    border:none;
+}
+.incBtn, .decBtn{
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #97D2EC;
+    border:none;
+}
+
+button:hover{
+    box-shadow: 5px 10px 15px -7px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05, 1.05);
+    border:none;
+    font-weight: bolder;
+}
+@media(max-width: 768px){
+    .center_div{
+        min-width: 15%;
+        height: 40vh;
+    }
+    .counter{
+        margin-top : 40px;
+        font-size : 15px;
+    }
+    .btns{
+        display: block;
+        padding: 5px;
+    }
+    button{
+        /* margin-left: 5px; */
+        min-height: 35px;
+        min-width:3vw;
+        color: #fff;
+        margin-top: 5px;
+       
+    }
+    .incBtn{
+        font-size:2vw;
+    }
+    .decBtn{
+        font-size:2vw;
+    }
+}
+@media(max-width: 1612px) and (min-width: 768px){
+    .center_div{
+        min-width: 20%;
+        height: 50vh;
+    }
+    .btns{
+        display: block;
+        padding: 10px;
+    }
+    button{
+        /* margin-left: 5px; */
+        min-height: 40x;
+        min-width: 10%;
+        color: #fff;
+        margin-top: 5px;
+       
+    }
+    .incBtn{
+        font-size: 15px;
+    }
+    .decBtn{
+        font-size: 15px;
+    }
+}

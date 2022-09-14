@@ -11,6 +11,7 @@ import Challange5, { CNumber } from "./Challange_5";
 import Form from './Form';
 import Challange6, {cNumber} from "./Challange_6";
 import SpreadOperator from "./SpreadOperator";
+import Challange7, {challange_num} from './Challange_7';
 
 // use of external css
 import "./index.css";
@@ -156,6 +157,14 @@ ReactDom.render(
 ReactDom.render(
   <>
     <SpreadOperator />
+  </>,document.getElementById('root')
+)
+
+// Challange 7
+ReactDom.render(
+  <>
+    <h1 className='heading_style commen_heading'>This is Challange number {challange_num}</h1>
+    <Challange7 />
   </>,document.getElementById('root')
 )
 //without use react
