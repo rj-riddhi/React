@@ -10,3 +10,4 @@ Topics covered in this project are :
 ✅ callback functions in two different files using props
 ✅ hooks and useState
 ✅ use of SpreadOperator (...)
+✅ use of slice method for deleting element from array
