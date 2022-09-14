@@ -7,14 +7,20 @@ const App = () =>{
     const addItem = () => {
         addnewItem((prevalue)=>{
             const val = document.getElementsByName('iteminput')[0].value;
-            return [...prevalue,
-                {id : prevalue.length,
-                value : val}]
+            return [...prevalue,val]
            });
            setValue('');
     }
     const itemChanged = (event) => {
         setValue(event.target.value);
+    }
+    const deleteItem = (id)=>{
+        addnewItem(()=>{
+            return [
+                ...items.slice(0, id),
+                ...items.slice(id + 1)
+              ];
+        });
     }
 
     return (
@@ -28,11 +34,13 @@ const App = () =>{
                     <button onClick = {addItem}> + </button>
                     <ol>
                         {
-                            items.map((val) => {
+                            items.map((val,index) => {
                                return <List 
-                                        key = {val.id} 
-                                        value={val.value} 
-                                        id={val.id}/>
+                                        key = {index} 
+                                        value={val} 
+                                        id={index}
+                                        onSelect = {deleteItem}
+                                        />
                         })
                         }
                     </ol>
