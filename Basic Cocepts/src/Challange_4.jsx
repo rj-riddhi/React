@@ -1,3 +1,4 @@
+import React from 'react';
 import {Add, Sub, Mul, Div} from './Calc';
 
 const ChallangeNumber = 4;

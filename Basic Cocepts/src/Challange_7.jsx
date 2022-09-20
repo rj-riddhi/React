@@ -13,7 +13,7 @@ const Challange_7 = () => {
     const decNum = () => {
         updateNum(num - 1 >= 0 ? num - 1 : 0)
         if(num === 0)
-        alert('0 is Min limite')
+        alert('0 is Min limite');
     }
     return (
         <>
