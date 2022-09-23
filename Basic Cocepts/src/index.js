@@ -12,6 +12,7 @@ import Form from './Form';
 import Challange6, {cNumber} from "./Challange_6";
 import SpreadOperator from "./SpreadOperator";
 import Challange7, {challange_num} from './Challange_7';
+import ContextApi from './ContextApi';
 
 // use of external css
 import "./index.css";
@@ -165,6 +166,14 @@ ReactDom.render(
   <>
     <h1 className='heading_style commen_heading'>This is Challange number {challange_num}</h1>
     <Challange7 />
+  </>,document.getElementById('root')
+)
+
+// Context API
+ReactDom.render(
+  <>
+    <h1 className='heading_style commen_heading'>Example Of Context API</h1>
+    <ContextApi />
   </>,document.getElementById('root')
 )
 //without use react
