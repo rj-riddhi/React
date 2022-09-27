@@ -13,6 +13,11 @@ import Challange6, {cNumber} from "./Challange_6";
 import SpreadOperator from "./SpreadOperator";
 import Challange7, {challange_num} from './Challange_7';
 import ContextApi from './ContextApi';
+import Challange8, {challange_number} from './Challange_8';
+// import AxiosApi from './AxiosApi';
+import { BrowserRouter  } from 'react-router-dom'
+import RoutesPractice from './RoutesPractice';
+import Navbar from './Navbar';
 
 // use of external css
 import "./index.css";
@@ -174,6 +179,34 @@ ReactDom.render(
   <>
     <h1 className='heading_style commen_heading'>Example Of Context API</h1>
     <ContextApi />
+  </>,document.getElementById('root')
+)
+
+// Challange 8 (useEffect)
+ReactDom.render(
+  <>
+   <h1 className='heading_style commen_heading'>This is Challange number {challange_number}</h1>
+    <Challange8 />
+  </>,document.getElementById('root')
+);
+
+//fetch data from API (AXIOS API we can also fetch api using fetch method)
+// ReactDom.render(
+//   <>
+//    <h1 className='heading_style commen_heading'>AXIOS Api</h1>
+//     <AxiosApi />
+//   </>,document.getElementById('root')
+// );
+
+// React routers
+ReactDom.render(
+  <>
+     <h1 className='heading_style commen_heading'>React Routers</h1>
+      <BrowserRouter >
+      <Navbar />
+      <RoutesPractice />
+     </BrowserRouter>
+    
   </>,document.getElementById('root')
 )
 //without use react
