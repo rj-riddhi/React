@@ -102,3 +102,10 @@ button{
 p{
   text-align: center;
 }
+.menu_style{
+  width: 100%;
+  line-height: 60px;
+  background-color: #20232a;
+  display: flex;
+  justify-content: space-around;
+}
