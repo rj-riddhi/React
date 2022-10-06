@@ -6,6 +6,7 @@ import Contact from './Contact';
 import Error from './Error';
 import Navbar from './Navbar';
 import UseParams from './UseParams';
+import UseLocation from './UseLocation';
 const RoutesPractice = () =>{
     return(
         <>
@@ -16,6 +17,8 @@ const RoutesPractice = () =>{
             <Route path = '/contact' element = <Contact name= {'Contact'}/>/>
             {/* useParams use */}
             <Route path = '/user/:name/:lname' element = <UseParams />/>
+            {/* useLocation use */}
+            <Route path = '/user/:city' element = <UseLocation />/>
             <Route path = '*' element = <Error />/>
         </Routes>
         </>

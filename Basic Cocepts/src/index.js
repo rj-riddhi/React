@@ -70,9 +70,9 @@ ReactDom.render(
     <br />
     {/* JSX Attributes */}
     <p contentEditable="true">
-      {" "}
+      
       <strong contentEditable="false">ContentEditable attribute</strong> : JSX
-      attribute{" "}
+      attribute
     </p>
     <br />
     <br />

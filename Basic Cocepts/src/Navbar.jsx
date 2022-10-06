@@ -13,6 +13,8 @@ const Navbar = () =>{
             style={({ isActive }) => ({ color: isActive ? '#ffffff' : '#61dafb',backgroundColor:'#20232a', fontWeight: 'bolder', textDecoration: 'none'})}>Contact</NavLink>
             <NavLink exact='false' to="/user/name/lname"
              style={({ isActive }) => ({ color: isActive ? '#ffffff' : '#61dafb',backgroundColor:'#20232a', fontWeight: 'bolder', textDecoration: 'none'})}>User</NavLink>
+            <NavLink exact='false' to="/user/city"
+             style={({ isActive }) => ({ color: isActive ? '#ffffff' : '#61dafb',backgroundColor:'#20232a', fontWeight: 'bolder', textDecoration: 'none'})}>Location</NavLink>
         </div>
         </>
       )
