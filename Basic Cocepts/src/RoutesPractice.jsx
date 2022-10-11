@@ -1,5 +1,5 @@
 import React from "react";
-import {  Routes, Route} from 'react-router-dom';
+import {  Routes, Route, Navigate } from 'react-router-dom';
 import Home from './Home';
 import About from './About';
 import Contact from './Contact';
@@ -21,7 +21,11 @@ const RoutesPractice = () =>{
             {/* useLocation use */}
             <Route path = '/user/:city' element = <UseLocation />/>
             <Route path = '/search' element = <Search />/>
-            <Route path = '*' element = <Error />/>
+            {/* two ways to handling invalid url path  */}
+            {/*1.)  redirect to the error page when user enters wrong path from url */}
+            <Route path = '*'  element = <Error />/>
+            {/*2.) instead of showing error page  direct redirect to the home page when user enters wrong path from url */}
+            <Route path = '*'  element = { <Navigate to="/" /> }/>
         </Routes>
         </>
     )
