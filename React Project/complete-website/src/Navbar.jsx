@@ -6,6 +6,7 @@ import Home from './Home';
 import Services from './Services';
 import About from './About';
 import Contact from './Contact';
+import Footer from './Footer';
 function Navbar() {
   return (
     <>
@@ -60,6 +61,7 @@ function Navbar() {
         <Route exact path="/contact" element=<Contact /> />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
+      <Footer />
     </>
   );
 }
