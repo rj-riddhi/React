@@ -6,7 +6,7 @@ const Home = () => {
       <>
       <div id="header">
         <div className="container-fluid my-5">
-          <div className="row pt-5">
+          <div className="row">
             <div className="col-10 mx-auto p-0">
                 <Common 
                     info= "Grow Your business with" 

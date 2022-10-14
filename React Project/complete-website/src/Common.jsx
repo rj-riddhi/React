@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 const Common = (props) => {
     return (
         <>
-            <div className="row pt-5 d-flex align-items-center">
+            <div className="row d-flex align-items-center">
             <div className="col-md-6 order-2 order-lg-1 pt-5 pt-lg-0 d-flex  flex-column">
                 <h1 > {props.info} <br />
                 <strong className="brand">TechRiddhi</strong></h1>
