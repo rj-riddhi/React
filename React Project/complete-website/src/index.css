@@ -71,6 +71,9 @@
   box-shadow : 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
   transform: scale(1.05, 1.05);
 }
+.footer-div{
+  margin-top:8rem;
+}
 @keyframes up-down{
   0%{ transform: translateY(10px); }
   100%{ transform: translateY(-10px); }
