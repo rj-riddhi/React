@@ -1,5 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@500&family=Stick+No+Bills:wght@800&display=swap');
 *{
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  font-family: 'Jost', sans-serif;
 }
+.main-div{
+  padding: 20px;
+  margin-top: 10rem !important;
+  width: 25vw;
+  height: 60vh;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.2rem 3rem rgba(0, 0, 0, 0.2);
+  background: #a5bbdd;
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+  min-width: 20rem;
+  min-height: 35rem;
+  text-align: center;
+}
+.input-div{
+  border:none;
+  border: transparent;
+  border-radius: 20px;
+  height: 47px;
+  box-shadow : 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
+}
+.input-div:focus{
+  outline-color:aliceblue;
+}
+
+.information{
+  margin-top: 6rem;
+}
+.information h1{
+  margin-bottom: 0px;
+  letter-spacing: 2px;
+  line-height: 2;
+  font-size:  60px;
+  text-transform: capitalize;
+}
+.information h2{
+ line-height: 2;
+ font-size: 40px;
+ letter-spacing: 1px;
+}
+.information h3{
+  font-size: 20px;
+  letter-spacing: 2px;
+  /* color: #748DA6; */
+  margin-bottom: 5rem;
+}
+.wave{
+  opacity: 0.3;
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  background: white;
+  width: 50rem;
+  height: 50rem;
+  margin-left: -25rem;
+  margin-top: -20rem;
+  transform-origin: 50% 50%;
+  border-radius: 43%;
+  animation: drift 5000ms infinite linear;
+  z-index: 1;
+}
+.wave .-three{
+  animation: drift 7000ms infinite linear;
+  opacity: 0.2;
+  z-index: 2 !important;
+}
+.wave .-two{
+  animation: drift 9000ms infinite linear;
+  opacity: 0.1;
+  z-index: 3 !important;
+  
+}
+@keyframes drift{
+  100% { transform: rotate(360deg); }
+}
+
